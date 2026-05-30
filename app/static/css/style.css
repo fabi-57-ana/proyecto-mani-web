@@ -481,3 +481,197 @@ footer p {
 
     color: white;
 }
+
+.btn-drive {
+
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 15px 25px;
+
+    background-color: #8bc34a;
+
+    color: black;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+}
+
+/* =========================
+   RESPONSIVE MOVIL
+========================= */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+
+    nav {
+
+        flex-direction: column;
+
+        padding: 15px;
+    }
+
+    nav h1 {
+
+        font-size: 24px;
+    }
+
+    nav ul {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+
+        margin-top: 10px;
+    }
+
+    nav a {
+
+        font-size: 16px;
+    }
+
+    /* OCULTAR QR EN NAVBAR */
+
+    .nav-qr {
+
+        display: none;
+    }
+
+    /* HERO */
+
+    .hero {
+
+        height: auto;
+
+        padding: 120px 20px 60px;
+    }
+
+    .hero h2 {
+
+        font-size: 34px;
+    }
+
+    .hero p {
+
+        font-size: 18px;
+    }
+
+    /* OCULTAR QR DEL HERO */
+
+    .hero-qr {
+
+        display: none;
+    }
+
+    /* MOSTRAR BOTON DRIVE */
+
+    .btn-drive {
+
+        display: inline-block;
+    }
+
+    /* SECCIONES */
+
+    .contenido,
+    .integrantes,
+    .dashboard,
+    .institucion,
+    .qr-section,
+    .tiempo-real {
+
+        padding: 60px 20px;
+    }
+
+    /* TITULOS */
+
+    .contenido h2,
+    .integrantes h2,
+    .dashboard h2,
+    .institucion h2,
+    .qr-section h2,
+    .tiempo-real h2 {
+
+        font-size: 32px;
+    }
+
+    .subtitulo-seccion {
+
+        font-size: 26px;
+    }
+
+    /* CARDS */
+
+    .cards {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .card {
+
+        width: 100%;
+
+        max-width: 350px;
+    }
+
+    .card h3 {
+
+        font-size: 22px;
+    }
+
+    .card p {
+
+        font-size: 16px;
+    }
+
+    /* DASHBOARD */
+
+    .dashboard-img {
+
+        width: 100%;
+    }
+
+    .dashboard-box {
+
+        padding: 25px;
+    }
+
+    /* ISPC */
+
+    .logo-ispc {
+
+        width: 120px;
+    }
+
+    .institucion-box {
+
+        padding: 25px;
+    }
+
+    /* QR */
+
+    .qr-section img {
+
+        width: 220px;
+    }
+
+    /* BOTON VOLVER ARRIBA */
+
+    #btn-arriba {
+
+        width: 50px;
+
+        height: 50px;
+
+        font-size: 24px;
+    }
+
+}
