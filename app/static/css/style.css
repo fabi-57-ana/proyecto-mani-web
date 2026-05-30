@@ -66,11 +66,9 @@ nav a:hover {
 
     margin-top: 90px;
 
-    background: linear-gradient(
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
-    ),
-    url("/static/img/mani.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url("/static/img/mani.png");
     background-size: cover;
     background-position: center;
 }
@@ -240,7 +238,7 @@ button:hover {
     color: #ffeb3b;
     margin-bottom: 20px;
     font-size: 32px;
-} 
+}
 
 .dashboard-img {
 
@@ -423,7 +421,7 @@ footer p {
 
     align-items: center;
 
-    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 
     transition: 0.3s;
 
@@ -523,70 +521,74 @@ footer p {
 @media (max-width: 768px) {
 
     /* NAVBAR MOVIL */
-    
+
+    .nav-qr {
+        display: none;
+    }
+
     nav {
-    
+
         flex-direction: row;
-    
+
         justify-content: space-between;
-    
+
         align-items: center;
-    
+
         padding: 15px 20px;
     }
-    
+
     nav h1 {
-    
+
         font-size: 24px;
     }
-    
+
     .menu-toggle {
-    
+
         display: block;
-    
+
         background: none;
-    
+
         border: none;
-    
+
         color: white;
-    
+
         font-size: 32px;
-    
+
         cursor: pointer;
     }
-    
+
     nav ul {
-    
+
         display: none;
-    
+
         position: absolute;
-    
+
         top: 75px;
-    
+
         left: 0;
-    
+
         width: 100%;
-    
+
         background-color: #1b1b1b;
-    
+
         flex-direction: column;
-    
+
         align-items: center;
-    
+
         gap: 20px;
-    
+
         padding: 25px 0;
-    
+
         border-top: 1px solid #333;
     }
-    
+
     nav ul.active {
-    
+
         display: flex;
     }
-    
+
     nav a {
-    
+
         font-size: 18px;
     }
 

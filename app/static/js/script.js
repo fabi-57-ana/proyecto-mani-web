@@ -1,5 +1,35 @@
 // Proyecto Maní - Sistema IoT
+
 console.log("Proyecto Maní iniciado");
+
+// ==========================
+// MENU HAMBURGUESA
+// ==========================
+
+const menuToggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", () => {
+
+    menu.classList.toggle("active");
+
+});
+
+// Cerrar menú al tocar una opción
+
+document.querySelectorAll("#menu a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        menu.classList.remove("active");
+
+    });
+
+});
+
+// ==========================
+// DATOS TIEMPO REAL
+// ==========================
 
 async function cargarDatos() {
 
@@ -8,26 +38,6 @@ async function cargarDatos() {
         const response = await fetch("/api/datos");
 
         const datos = await response.json();
-
-        const menuToggle = document.getElementById("menu-toggle");
-
-        const menu = document.getElementById("menu");
-
-        menuToggle.addEventListener("click", () => {
-
-            menu.classList.toggle("active");
-
-        });
-
-        document.querySelectorAll("#menu a").forEach(link => {
-
-            link.addEventListener("click", () => {
-
-                menu.classList.remove("active");
-
-            });
-
-        });
 
         document.getElementById("temp").innerText =
             datos.temperatura + " °C";
@@ -47,7 +57,9 @@ async function cargarDatos() {
     } catch (error) {
 
         console.error(error);
+
     }
+
 }
 
 setInterval(cargarDatos, 2000);
