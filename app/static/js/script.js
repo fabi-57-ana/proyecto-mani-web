@@ -9,6 +9,26 @@ async function cargarDatos() {
 
         const datos = await response.json();
 
+        const menuToggle = document.getElementById("menu-toggle");
+
+        const menu = document.getElementById("menu");
+
+        menuToggle.addEventListener("click", () => {
+
+            menu.classList.toggle("active");
+
+        });
+
+        document.querySelectorAll("#menu a").forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                menu.classList.remove("active");
+
+            });
+
+        });
+
         document.getElementById("temp").innerText =
             datos.temperatura + " °C";
 
@@ -24,7 +44,7 @@ async function cargarDatos() {
         document.getElementById("calefactor").innerText =
             datos.calefactor;
 
-    } catch(error) {
+    } catch (error) {
 
         console.error(error);
     }
