@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Maní</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h1>Proyecto Maní</h1>
+
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sensores">Sensores</a></li>
+            <li><a href="#tiempo-real">Tiempo Real</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#qr">QR</a></li>
+            <li><a href="#institucion">ISPC</a></li>
+            <li><a href="#integrantes">Integrantes</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+
+        <div class="hero-qr">
+
+            <a href="#qr">
+
+                <img
+                    src="/static/img/qr.png"
+                    alt="QR Proyecto Maní">
+
+            </a>
+
+            <p>Escaneá para ver el proyecto</p>
+
+        </div>
+
+        <div class="hero-texto">
+
+            <h2>
+                Plataforma IoT para monitoreo agroindustrial
+            </h2>
+
+            <p>
+                Sistema inteligente de monitoreo de temperatura,
+                humedad y automatización para almacenamiento de maní.
+            </p>
+
+            <a href="#dashboard">
+                <button>Ver Dashboard</button>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- SENSORES Y TECNOLOGÍAS -->
+
+    <section class="contenido" id="sensores">
+    
+        <h2>Sensores y Tecnologías</h2>
+    
+        <p>
+            El Proyecto Maní integra sensores, dispositivos IoT y herramientas
+            de análisis para monitorear variables críticas durante el almacenamiento
+            y procesamiento del maní.
+        </p>
+    
+        <p>
+            La plataforma combina adquisición de datos, comunicación en tiempo real,
+            almacenamiento histórico, visualización de información y automatización
+            de procesos para apoyar la toma de decisiones.
+        </p> 
+
+        <h3 class="subtitulo-seccion">Sensores de Monitoreo</h3>
+
+        <div class="cards">
+        
+            <div class="card">
+                <h3>🌡️ Temperatura</h3>
+                <p>
+                    Monitoreo continuo de la temperatura para controlar
+                    las condiciones de almacenamiento y secado.
+                </p>
+            </div>
+        
+            <div class="card">
+                <h3>💧 Humedad Ambiente</h3>
+                <p>
+                    Medición de la humedad relativa del ambiente para
+                    prevenir condiciones desfavorables.
+                </p>
+            </div>
+        
+            <div class="card">
+                <h3>🥜 Humedad del Grano</h3>
+                <p>
+                    Seguimiento de la humedad del maní para mejorar
+                    la conservación y calidad del producto.
+                </p>
+            </div>
+        
+        </div>
+
+        <h3 class="subtitulo-seccion">Investigación y Desarrollo</h3>
+
+        <div class="cards">
+        
+            <div class="card">
+                <h3>🤖 Webots</h3>
+                <p>
+                    Simulación de brazo robótico para procesos
+                    automatizados de manipulación.
+                </p>
+            </div>
+        
+            <div class="card">
+                <h3>🛰️ Imágenes Satelitales</h3>
+                <p>
+                    Análisis territorial y evaluación agrícola
+                    mediante datos remotos.
+                </p>
+            </div>
+        
+            <div class="card">
+                <h3>🌱 Agronomía</h3>
+                <p>
+                    Investigación técnica aplicada al cultivo,
+                    almacenamiento y calidad del maní.
+                </p>
+            </div>
+        
+        </div>
+
+
+    </section>
+
+    <!-- TIEMPO REAL -->
+    
+    <section class="tiempo-real" id="tiempo-real">
+    
+        <h2>Monitoreo en Tiempo Real</h2>
+    
+        <p>
+            Datos recibidos directamente desde la estación IoT.
+        </p>
+    
+        <div class="cards">
+    
+            <div class="card">
+                <h3>🌡️ Temperatura</h3>
+                <p id="temp">-- °C</p>
+            </div>
+    
+            <div class="card">
+                <h3>🔥 Temp. Horno</h3>
+                <p id="temp_horno">-- °C</p>
+            </div>
+    
+            <div class="card">
+                <h3>🥜 Humedad Grano</h3>
+                <p id="humedad">-- %</p>
+            </div>
+    
+            <div class="card">
+                <h3>💨 Extractor</h3>
+                <p id="extractor">--</p>
+            </div>
+    
+            <div class="card">
+                <h3>🔥 Calefactor</h3>
+                <p id="calefactor">--</p>
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <!-- DASHBOARD -->
+
+    <section class="dashboard" id="dashboard">
+    
+        <h2>Dashboard de Monitoreo</h2>
+    
+        <p>
+            Visualización en tiempo real de temperatura,
+            humedad y automatización del sistema.
+        </p>
+    
+        <div class="dashboard-box">
+
+            <h3>Grafana Dashboard</h3>
+    
+                <p>
+                    El sistema permite visualizar en tiempo real
+                    variables ambientales, estados de automatización
+                    e información histórica obtenida por los sensores.
+                </p>
+    
+                <div class="dashboard-gallery">
+
+                    <img src="/static/img/dashboard6.png" alt="Dashboard 6" class="dashboard-img">
+                
+                    <img src="/static/img/dashboard7.png" alt="Dashboard 7" class="dashboard-img">
+
+                    <img src="/static/img/dashboard8.png" alt="Dashboard 8" class="dashboard-img">
+
+                    <img src="/static/img/dashboard4.png" alt="Dashboard 4" class="dashboard-img">
+                
+                    <img src="/static/img/dashboard5.png" alt="Dashboard 5" class="dashboard-img">
+
+                </div>
+
+        </div>
+    
+    </section>
+
+    <!-- QR -->
+
+    <section class="qr-section" id="qr">
+    
+        <h2>Acceso al Proyecto</h2>
+    
+            <p>
+                Escaneá el código QR para acceder a la
+                documentación, dashboard, imágenes y archivos
+                del Proyecto Maní.
+            </p>
+    
+        <img src="/static/img/qr.png" alt="QR Proyecto Maní">
+    
+    </section> 
+
+    <!-- INSTITUCION -->
+
+    <section class="institucion" id="institucion">
+    
+        <h2>Institución y Espacio Curricular</h2>
+    
+        <div class="institucion-box">
+    
+            <img
+                src="/static/img/ispc_logo.png"
+                alt="Logo ISPC"
+                class="logo-ispc">
+    
+            <h3>Instituto Superior Politécnico Córdoba</h3>
+    
+            <p>
+                Tecnicatura Superior en Nuevas Tecnologías Aplicadas al Agro
+            </p>
+    
+            <p>
+                Espacio Curricular: Proyecto Integrador
+            </p>
+    
+            <p>
+                Docente: Miguel Ángel Rodríguez Maiztegui
+            </p>
+    
+        </div>
+    
+    </section>
+
+    <!-- INTEGRANTES -->
+
+    <section class="integrantes" id="integrantes">
+    
+        <h2>Integrantes del Proyecto</h2>
+    
+        <div class="cards">
+    
+            <div class="card">
+                <h3>Juan Canales</h3>
+                <p>
+                    Ingeniería agronómica, investigación,
+                    análisis técnico y desarrollo del proyecto.
+                </p>
+            </div>
+    
+            <div class="card">
+                <h3>Walter Nieto</h3>
+                <p> 
+                    Implementación de Docker,
+                    InfluxDB y dashboards en Grafana.
+                    Redes, MQTT y configuración
+                    de infraestructura.
+                </p>
+            </div>
+    
+            <div class="card">
+                <h3>Agustín Corzo</h3>
+                <p>
+                    Desarrollo en Webots de brazo robótico
+                    para cinta transportadora automatizada.
+                </p>
+            </div>
+    
+            <div class="card">
+                <h3>Ivi Monsalvo</h3>
+                <p>
+                    Investigación de sensores,
+                    integración IoT y pruebas del sistema.
+                </p>
+            </div>
+    
+            <div class="card">
+                <h3>Maxi Altamirano</h3>
+                <p>
+                    Investigación agrícola,
+                    imágenes satelitales y análisis territorial.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Fabiana Fontana</h3>
+                <p>
+                    Desarrollo IoT, programación en Python,
+                    FastAPI, automatización y visualización de datos.
+                </p>
+            </div>
+    
+        </div> 
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+    
+        <h3>Proyecto Maní</h3>
+    
+        <p>
+            Plataforma IoT para monitoreo agroindustrial
+            aplicada al almacenamiento y conservación de maní.
+        </p>
+        <p>
+            Feria de Ciencias 2026
+        </p>
+    
+        <p>
+            Córdoba - Argentina
+        </p>
+    
+    </footer>
+
+    <a href="#inicio" id="btn-arriba">
+        ↑
+    </a>
+    
+    <script src="/static/js/script.js"></script>
+
+</body>
+</html>
